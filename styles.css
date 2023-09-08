@@ -1,0 +1,146 @@
+#mainDiv{
+    width: 90vw;
+    margin-top: 10px;
+    position: relative;
+    padding: 10px;
+    overflow-y: auto;
+    border-radius: 5px;
+    height: 81vh;
+    background-color: rgba(36, 35, 35, 0.586);
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(94, 80, 204); 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(94, 80, 204); 
+}
+
+body{
+    display: flex;
+    color: white;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.messages{
+    position: fixed;
+    bottom: 20px;
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    justify-content: start;
+    gap: 5px;
+    background-color: rgb(57, 56, 56);
+    align-items: center;
+}
+
+#message{
+    border-radius: 10px;
+    background: rgb(90, 89, 89);
+    padding: 5px 10px;
+    border: none;
+    resize: none;
+    width: 90vw;
+    height: fit-content;
+    font-size: 15px;
+    color: white;
+    outline: 0px;
+}
+
+#send{
+    color: rgb(141, 128, 240);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.greetingShow{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+
+.greetingHide{
+    display: none;
+}
+
+#send:hover{
+    color: rgb(57, 37, 204);
+    transition: all 0.2s ease-in-out;
+}
+
+.sendMessage{
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+#incomingMessage{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+}
+
+#incomingMessage p{
+    background: rgba(36, 35, 35, 0.586);
+    padding: 5px 10px;
+    width: fit-content;
+    max-width: 50%;
+    border-radius: 10px;;
+}
+
+#incomingMessage img, #outgoingMessage img{
+    width: 30px;
+    border-radius: 4px;
+}
+
+#icon{
+    background: rgb(94, 80, 204);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#outgoingMessage{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+
+#outgoingMessage p{
+    background: rgb(94, 80, 204);
+    padding: 5px 10px;
+    width: fit-content;
+    max-width: 50%;
+    border-radius: 10px;;
+}
